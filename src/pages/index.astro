@@ -1,0 +1,9 @@
+---
+import TodoList from "../components/TodoList.vue";
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="home">
+  <TodoList client:load />
+  <!-- client:load ensures the Vue component is hydrated in the browser -->
+</BaseLayout>
